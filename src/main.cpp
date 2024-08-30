@@ -22,7 +22,7 @@ class $modify(MenuLayer){
         "No Thanks", "JOIN!",
         [this](auto, bool btn2) {
             if (btn2) {
-                CCApplication::sharedApplication()->openURL("https://discord.gg/GuagJDsqds");
+                CCApplication::sharedApplication()->openURL("https://discord.com/invite/ayKZX7skpX");
             }
             Mod::get()->setSavedValue<bool>("temp_newServerNotifOpened",true);
         },false);
@@ -109,7 +109,7 @@ class $modify(MyLevelCell, LevelCell) {
             return;
         }
 
-        std::string URL = fmt::format("https://raw.githubusercontent.com/prismgdps/level-thumbnails/main/thumbs/{}.png",(int)m_level->m_levelID);
+        std::string URL = fmt::format("https://raw.githubusercontent.com/xilochhaey/level-thumbnails/main/thumbs/{}.png",(int)m_level->m_levelID);
         int id = m_level->m_levelID.value();
 
         auto req = web::WebRequest();
